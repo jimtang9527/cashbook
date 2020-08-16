@@ -4,7 +4,15 @@
 
 git clone https://github.com/jimtang9527/cashbook/
 
-cd cashbook
+#离线验证
+
+cd cashbook/build
+
+open index.html 
+
+#开发验证
+
+cd ..
 
 npm install
 

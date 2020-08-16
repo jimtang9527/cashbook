@@ -55,9 +55,9 @@ class Select extends React.Component {
             for (let i = 0; i < children.length; i++) {
                 let item = children[i]
                 const { type: { name }, props: { value, children: text } } = item
-                if (name !== 'Option') {
-                    continue
-                }
+                // if (name !== 'Option') {
+                //     continue
+                // }
                 data.push({
                     value,
                     text
