@@ -14,9 +14,9 @@ npm start
 
 1、底层react+react-native-web+dva
 
-对于产品型技术方案，我认为一个原则控制得越细越好，前期适应成本较高，不过选择的开源方案越底层越好，上层应用才能不受约束。
+对于产品型技术方案，一个原则要贯彻：控制得越细越好，控制得越底层越好。前期适应成本较高，上手不会那么快。但是后期开发应用才不受约束。
 
-react-native比react要求更细。因此使用react-native-web，它遵循react-native大部分接口，移植到移动端、PC端成本较低
+react-native比react更细。因此工程使用了react-native-web，它实现了react-native大部分接口，移植到移动端、PC端成本较低。
 
 2、icon切换为svg
 
