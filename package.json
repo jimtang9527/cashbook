@@ -1,0 +1,49 @@
+{
+  "name": "cashbook",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "date-fns": "^2.15.0",
+    "dayjs": "^1.8.29",
+    "dva-core": "^2.0.2",
+    "dva-loading": "^3.0.20",
+    "modal-enhanced-react-native-web": "^0.2.0",
+    "numeral": "^2.0.6",
+    "react": "16.13.1",
+    "react-datepicker": "^3.1.3",
+    "react-dom": "16.13.1",
+    "react-native-svg": "^12.1.0",
+    "react-native-web": "0.13.5",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "string": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "babel-plugin-root-import": "^6.5.0",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.6",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
