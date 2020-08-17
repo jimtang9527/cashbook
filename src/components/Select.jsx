@@ -54,10 +54,8 @@ class Select extends React.Component {
             let data = []
             for (let i = 0; i < children.length; i++) {
                 let item = children[i]
-                const { type: { name }, props: { value, children: text } } = item
-                // if (name !== 'Option') {
-                //     continue
-                // }
+                const { props: { value, children: text } } = item
+                //生产环境由于代码混淆，会影响name的值，这里去掉判断
                 data.push({
                     value,
                     text
