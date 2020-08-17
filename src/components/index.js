@@ -23,6 +23,14 @@ export {
 }
 from './DatePicker'
 export {
+    default as message
+}
+from './message'
+export {
+    default as Alert
+}
+from './Alert'
+export {
     React,
     View,
     Text,

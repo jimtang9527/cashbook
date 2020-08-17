@@ -1,4 +1,4 @@
-import { React, View, StyleSheet, Text, Table, Svg, Button } from '~/components/'
+import { React, View, StyleSheet, Text, Table, Svg, Button, Alert } from '~/components/'
 import { connect, Util } from '~/lib/'
 import Condition from './Condition'
 import Statistics from './Statistics'
@@ -130,6 +130,7 @@ class Index extends React.Component {
         const columns = this.getColumns()
         return (
             <View style={styles.main}>
+                <Alert />
                 <Form visible={visible} onCancel={this.onCancel.bind(this)} onSubmit={this.onSubmit.bind(this)} />
                 <View style={styles.header}>
                     <Svg value='cashbook' style={styles.logo}></Svg>

@@ -2,7 +2,7 @@
  * 新建记录
  * @jimtang9527
  */
-import { React, View, Text, TextInput, DatePicker, Modal, Button, Select, TouchableOpacity } from '~/components/'
+import { React, View, Text, TextInput, DatePicker, Modal, Button, Select, TouchableOpacity, message } from '~/components/'
 import { connect } from '~/lib/'
 const { Option } = Select
 @connect(({ category }) => ({
@@ -28,6 +28,10 @@ class Form extends React.Component {
         let { date, category, amount } = this.state
         const { categories } = this.props
         if (this.props.onSubmit) {
+            if (!amount) {
+                message.warning('金额不能为空')
+                return
+            }
             let time = date.getTime()
             let type = -1
             //默认值
@@ -47,6 +51,7 @@ class Form extends React.Component {
                 amount: parseFloat(amount)
             }
             this.props.onSubmit(record)
+            message.success('新增成功')
         }
     }
     onChangeText(v) {
