@@ -4,7 +4,6 @@ import {
     View,
     StyleSheet
 } from '../Base'
-import Svg, { Path } from 'react-native-svg'
 import SvgIndex from './data'
 import S from 'string'
 class SVG extends React.Component {
@@ -33,17 +32,17 @@ class SVG extends React.Component {
         let width = size * rate
         return (
             <View style={this.props.style}>
-                <Svg
+                <svg
                     width={width}
                     height={height}
                     viewBox={viewBox}>
                     {data.map((item, i) => (
-                        <Path
+                        <path
                             key={i}
                             fill={item.fill || color}
                             d={item.d} />
                     ))}
-                </Svg>
+                </svg>
             </View>
         )
     }
